@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>António Almeida - Computing Engineering Student</title>
 	<meta name="author" content="António Almeida" />
@@ -10,6 +11,8 @@
 	<meta name="Resource-type" content="Document" />
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="./css/skeleton.css" />
@@ -25,9 +28,15 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
+
+
+		<!-- Compiled and minified JavaScript -->
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>-->
+
 		<script type="text/javascript" src="./vendors/scrolloverflow.js"></script>
 
 		<script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="./js/invert.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
@@ -35,10 +44,20 @@
 					css3: true
 				});
 			});
+
+			var i = 0;
 		</script>
+
 
 	</head>
 	<body>
+
+		<div class="fixed-action-btn">
+		<a class="btn-floating btn-large black">
+				<i class="fa fa-exchange" onclick="toggleInvert(i);i = ++i % 2"></i>
+			</a>
+		</div>
+
 
 		<div class="container" id="fullpage">
 			<div class="section" id="section0">
@@ -55,42 +74,32 @@
 				</div>
 			</div>
 			<div class="section" id="section1">
-				<h6><small><strong>WHAT CAN I DO?</strong></small></h6>
 				<div class="row">
-					<div class="one-third column">
-						<h4><strong>Languages</strong></h4>
-						<ul>
+					<div class="one-half column">
+						<h4><strong>Languages & Frameworks</strong></h4>
+						<ul class="browser-default">
+							<li>Bootstrap</li>
+							<li>jQuery</li>
 							<li>C/C++</li>
 							<li>JavaScript</li>
-							<li>HTML</li>
-							<li>CSS</li>
+							<li>HTML & CSS</li>
 						</ul>
 					</div>
-					<div class="one-third column">
+					<div class="one-half column">
 						<h4><strong>Skills</strong></h4>
-						<ul>
+						<ul class="browser-default">
 							<li>Web Development</li>
 							<li>Software Engineering</li>
 							<li>SEO</li>
 						</ul>
 					</div>
-					<div class="one-third column">
-						<h4><strong>Frameworks & Tools</strong></h4>
-						<ul>
-							<li>Bootstrap</li>
-							<li>jQuery</li>
-							<li>Git</li>
-							<li>Vim</li>
-						</ul>
-					</div>
 				</div>
 			</div>
 			<div class="section" id="section2">
-				<h6><small><strong>WHAT HAVE I DONE?</strong></small></h6>
 				<div class="row">
 					<div class="">
 						<h4><strong>Projects</strong></h4>
-						<ul>
+						<ul class="browser-default">
 							<li><a href="http://iamchrisdurkin.com">Chris Durkin, DJ & Producer - Personal Website</a></li>
 							<li><a href="http://cooparedes.com">C. Agrícola do Concelho de Paredes - Company Website</a></li>
 							<li><a href="http://simulcand.whoisantonio.com">University Application Calculator (Portugal) - Web App</a></li>
