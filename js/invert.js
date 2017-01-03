@@ -13,13 +13,12 @@ function toggleInvert(i) {
 
 	if(i == 0) {
 		document.documentElement.style.WebkitFilter = "invert(100%)";
-		if(isSafari == false)
+		if(isSafari == false || (isMobile == true && isSafari == true))
 			document.body.style.backgroundColor = "black";
-
 	}
 	else {
 		document.documentElement.style.WebkitFilter = "invert(0%)";
-		if(isSafari == false)
+		if(isSafari == false || (isMobile == true && isSafari == true))
 			document.body.style.backgroundColor = "white";
 	}
 }
