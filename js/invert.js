@@ -1,12 +1,12 @@
 //Invert color scheme function
 var toggleInvert = function(i) {
     if(i == 0) {
-        $("body").css("background","#090809");
+        $("body").css("background","black");
         $("#main").addClass("inverted");
         return;
     }
 
-    $("body").css("background","#F6F7F6");
+    $("body").css("background","white");
     $("#main").removeClass("inverted");
     return;
 }
