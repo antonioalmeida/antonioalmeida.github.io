@@ -1,0 +1,3 @@
+[submodule "quickstart/themes/tex"]
+	path = quickstart/themes/tex
+	url = https://github.com/antonioalmeida/tex-hugo-theme
