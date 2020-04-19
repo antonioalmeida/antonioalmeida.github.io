@@ -2,3 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "António Almeida"
 theme = "tex"
+
+[params]
+    bio = "BSc + MSc Computer Engineering Studeng at FEUP, Portugal. Semi-professional handball player."
