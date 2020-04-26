@@ -22,7 +22,7 @@ In this tutorial, commands that you enter will start with the "$" prompt. The ou
 
 Here's an example:
 
-```
+```shell
 ## this is a comment
 $ echo this is a command
 this is a command
@@ -144,7 +144,7 @@ The other directories (archetypes/, layouts/, and static/) are used when customi
 
 Running the `hugo` command with no options will read all the available content and generate the HTML files. It will also copy all static files (that's everything that's not content). Since we have an empty site, it won't do much, but it will do it very quickly.
 
-```
+```shell
 $ hugo --verbose
 INFO: 2014/09/29 Using config file: config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
@@ -163,7 +163,7 @@ The "`--verbose`" flag gives extra information that will be helpful when we buil
 
 We can verify that the command worked by looking at the directory again.
 
-```
+```shell
 $ ls -l
 total 8
 drwxr-xr-x  2 quoha  staff   68 Sep 29 16:49 archetypes
@@ -193,7 +193,7 @@ Hugo created two XML files, which is standard, but there are no HTML files.
 
 Verify that you can run the built-in web server. It will dramatically shorten your development cycle if you do. Start it by running the "server" command. If it is successful, you will see output similar to the following:
 
-```
+```shell
 $ hugo server --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
@@ -212,7 +212,7 @@ Press Ctrl+C to stop
 
 Connect to the listed URL (it's on the line that starts with "Web Server"). If everything is working correctly, you should get a page that shows the following:
 
-```
+```shell
 index.xml
 sitemap.xml
 ```
@@ -221,7 +221,7 @@ That's a listing of your public/ directory. Hugo didn't create a home page becau
 
 Let’s go back and look at those warnings again.
 
-```
+```shell
 WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
 ```
@@ -247,7 +247,7 @@ All themes have opinions on content and layout. For example, Zafta uses "post" o
 
 Use the hugo "new" command to create the skeleton of a theme. This creates the directory structure and places empty files for you to fill out.
 
-```
+```shell
 $ hugo new theme zafta
 
 $ ls -l
@@ -276,7 +276,7 @@ The skeleton includes templates (the files ending in .html), license file, a des
 
 Please take a minute to fill out the theme.toml and LICENSE.md files. They're optional, but if you're going to be distributing your theme, it tells the world who to praise (or blame). It's also nice to declare the license so that people will know how they can use the theme.
 
-```
+```shell
 $ vi themes/zafta/theme.toml
 author = "michael d henderson"
 description = "a minimal working template"
@@ -292,7 +292,7 @@ tags = ["tags", "categories"]
 
 Note that the the skeleton's template files are empty. Don't worry, we'll be changing that shortly.
 
-```
+```shell
 $ find themes/zafta -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/list.html
 -rw-r--r--  1 quoha  staff  0 Sep 29 17:31 themes/zafta/layouts/_default/single.html
@@ -310,7 +310,7 @@ Now that we've got a theme to work with, it's a good idea to add the theme name 
 
 Edit the file to add the theme, add a title for the site, and specify that all of our content will use the TOML format.
 
-```
+```shell
 $ vi config.toml
 theme = "zafta"
 baseurl = ""
@@ -326,7 +326,7 @@ $
 
 Now that we have an empty theme, let's generate the site again.
 
-```
+```shell
 $ hugo --verbose
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
@@ -345,7 +345,7 @@ Did you notice that the output is different? The warning message for the home pa
 
 Let's check the public/ directory to see what Hugo's created.
 
-```
+```shell
 $ ls -l public
 total 16
 drwxr-xr-x  2 quoha  staff   68 Sep 29 17:56 css
@@ -375,7 +375,7 @@ If it can't find any of these, it completely skips creating the home page. We no
 
 When Hugo created our theme, it created an empty home page template. Now, when we build the site, Hugo finds the template and uses it to generate the HTML for the home page. Since the template file is empty, the HTML file is empty, too. If the template had any rules in it, then Hugo would have used them to generate the home page.
 
-```
+```shell
 $ find . -name index.html | xargs ls -l
 -rw-r--r--  1 quoha  staff  0 Sep 29 20:21 ./public/index.html
 -rw-r--r--  1 quoha  staff  0 Sep 29 17:31 ./themes/zafta/layouts/index.html
@@ -388,7 +388,7 @@ Hugo does two things when generating the site. It uses templates to transform co
 
 Hugo assumes that your site will use both CSS and JavaScript, so it creates directories in your theme to hold them. Remember opinions? Well, Hugo's opinion is that you'll store your CSS in a directory named css/ and your JavaScript in a directory named js/. If you don't like that, you can change the directory names in your theme directory or even delete them completely. Hugo's nice enough to offer its opinion, then behave nicely if you disagree.
 
-```
+```shell
 $ find themes/zafta -type d | xargs ls -ld
 drwxr-xr-x  7 quoha  staff  238 Sep 29 17:38 themes/zafta
 drwxr-xr-x  3 quoha  staff  102 Sep 29 17:31 themes/zafta/archetypes
