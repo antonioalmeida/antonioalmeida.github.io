@@ -5,7 +5,8 @@ theme = "tex"
 
 [params]
     nickname = "antonioalmeida"
-    bio = "BSc + MSc Computer Engineering Studeng at FEUP, Portugal. Semi-professional handball player."
+    bio = "BSc + MSc Computer Engineering Studeng at FEUP, Portugal."
+    bio_2 = "Semi professional handball player"
 
 [markup]
   [markup.highlight]
@@ -16,5 +17,5 @@ theme = "tex"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "dracula"
+    style = "github"
     tabWidth = 4
