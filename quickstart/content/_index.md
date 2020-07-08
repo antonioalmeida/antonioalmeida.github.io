@@ -4,27 +4,7 @@ date = "2014-04-09"
 menu = "main"
 +++
 
-Hugo is a static site engine written in Go.
+My name is António Almeida and I'm a fifth (and final year) Computer Engineering Student at [FEUP](https://fe.up.pt), currently interning as Junior BA at [LTPLabs](https://ltplabs.com/). I also play professional [handball](https://www.zerozero.pt/news.php?id=276863) in Portugal's first division. 
 
+My goal in life is to create meaningful software. And let's be honest, dabbling with new technology is also fun. Interested in AI, Data Science/Engineering, and Music Software. Previously worked as _Research Assistant_ at [INESC-TEC](https://www.inesctec.pt/en) and as _Teaching Assistant_ at FEUP for courses on Computer Graphics and Low-level Device Drivers.
 
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/spf13).
-
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
