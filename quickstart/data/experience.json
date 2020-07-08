@@ -1,0 +1,21 @@
+[
+    {
+        "role":"Junior Business Analyst",
+        "company":"LTPLabs",
+        "company_url": "https://ltplabs.com",
+        "summary":"Part of the development team of a product for a large Portuguese retailer. Focused on developing an ML methodology for sales forecasting and to predict the impact of price markdowns.",
+        "range":"February 2020 - Present"
+    },
+    {
+        "role":"Research Assistant",
+        "company":"Current Company LTD",
+        "summary":"Expedited the synergies of collaborative agile tooling.",
+        "range":"March 2014 - February 2016"
+    },
+    {
+        "role":"Teaching Assistant",
+        "company":"Previous Company Inc.",
+        "summary":"Implemented continuous devops pipelines automationing",
+        "range":"February 2013 - March 2014"
+    }
+]
