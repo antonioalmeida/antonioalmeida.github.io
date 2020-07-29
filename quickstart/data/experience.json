@@ -7,15 +7,21 @@
         "range":"February 2020 - Present"
     },
     {
-        "role":"Research Assistant",
-        "company":"Current Company LTD",
-        "summary":"Expedited the synergies of collaborative agile tooling.",
+        "role":"Software Engineer / Research Assistant",
+        "company":"INESC-TEC",
+        "summary":"Part of the development team of [MELOA](https://www.ec-meloa.eu) as a member of the Computer Graphics and Information Systems department. Designed and developed a real time data streamer to authenticate, deliver, and load balance requests sent from IoT devices. Also designed a development kit for web apps that use MELOA's data and additional logic, using GraphQL with multiple data sources.",
         "range":"March 2014 - February 2016"
     },
     {
         "role":"Teaching Assistant",
-        "company":"Previous Company Inc.",
-        "summary":"Implemented continuous devops pipelines automationing",
-        "range":"February 2013 - March 2014"
+        "company":"FEUP",
+        "summary":"Assisted professors during undergraduates classes, part of FEUP's BSc. + MSc. in Informatics and Computer Engineering program. For the Computer Laboratory course, dealt mostly with implementing low-level device drivers on a VM running Minix OS. Worked on both 2017 and 2018 versions of the program. I also assisted Computer Graphics classes, a course consisting mostly of building guided projects with WebGL to learn the basics of computer graphics algorithms and structures.",
+        "range":"September 2017 - December 2018"
+    },
+    {
+        "role":"Web Development",
+        "company":"Freelancing",
+        "summary":"Spent early university summers designing an developing websites as pro bono work. Clients ranged from Music Producers to Agricultural Companies",
+        "range":"Summers 2015 and 2016"
     }
 ]
