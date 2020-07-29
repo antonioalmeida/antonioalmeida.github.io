@@ -1,0 +1,22 @@
+[
+    {
+        "title":"Ultrahack Budapest 2019",
+        "tag":"hackathon",
+        "summary":"Reached the final of [Ultrahacks's 'Digital Deephack in Budapest'](https://ultrahack.org/budapesthack2019), a 3-day international hackathon to develop technological solutions for OTP, the largest bank in Hungary."
+    },
+    {
+        "title":"Hack the Electron A",
+        "tag":"hackathon",
+        "summary":"Reached the finals of the [Hack the Electron A](https://taikai.network/edp-distribuicao/challenges/hacktheelectron-a/), a hackathon held by EDP, Portugal largest energy company, to design smart energy based solutions."
+    },
+    {
+        "title":"Bit Hackathon",
+        "tag":"hackathon",
+        "summary":"Reached the finals of 2019's edition of [Bit Hackathon](https://bithackathon.sonae.pt/), a 48-hour hackathon held by Sonae BIT, to design and develop technological solutions for the Portuguese retail industry."
+    },   
+    {
+        "title":"Hackacity 2019",
+        "tag":"hackathon",
+        "summary":"Won 2nd place (Team Pyto) in 2019's edition of [Hackacity Porto](https://hackacity.eu/porto/), a 24-hour hackathon to develop technological solutions for the city using municipal data."
+    }
+]
