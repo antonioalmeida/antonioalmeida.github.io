@@ -1,22 +1,12 @@
 [
     {
-        "title":"Ultrahack Budapest 2019",
+        "title":"Handball \"Career\"",
         "tag":"hackathon",
-        "summary":"Reached the final of [Ultrahacks's 'Digital Deephack in Budapest'](https://ultrahack.org/budapesthack2019), a 3-day international hackathon to develop technological solutions for OTP, the largest bank in Hungary."
+        "summary":"Played professional handball during my university years, following 11 years playing the sport as a (serious) hobby. Portugal's first division, practices 5 days a week, matches on weekends."
     },
     {
-        "title":"Hack the Electron A",
+        "title":"Hackathons",
         "tag":"hackathon",
-        "summary":"Reached the finals of the [Hack the Electron A](https://taikai.network/edp-distribuicao/challenges/hacktheelectron-a/), a hackathon held by EDP, Portugal largest energy company, to design smart energy based solutions."
-    },
-    {
-        "title":"Bit Hackathon",
-        "tag":"hackathon",
-        "summary":"Reached the finals of 2019's edition of [Bit Hackathon](https://bithackathon.sonae.pt/), a 48-hour hackathon held by Sonae BIT, to design and develop technological solutions for the Portuguese retail industry."
-    },   
-    {
-        "title":"Hackacity 2019",
-        "tag":"hackathon",
-        "summary":"Won 2nd place (Team Pyto) in 2019's edition of [Hackacity Porto](https://hackacity.eu/porto/), a 24-hour hackathon to develop technological solutions for the city using municipal data."
+        "summary":"I like hackathons. My friends like hackathons. \n\n - [Ultrahacks's 'Digital Deephack (72h)'](https://ultrahack.org/budapesthack2019), an international 3 day event in Budapest (_reached finals_); \n\n - [Hack the Electron A (virtual)](https://taikai.network/edp-distribuicao/challenges/hacktheelectron-a/), a hackathon on smart energy solutions held by EDP Portugal (_reached finals_). \n\n - [Bit Hackathon (48h)](https://bithackathon.sonae.pt) hackathon on digital solutions for the Portuguese retail industry, held by Sonae BIT (_reached finals_). \n\n - [Hackacity Porto (24h)](https://hackacity.eu/porto/), a hackathon on tech solutions for the city using municipal data (_2nd place_)."
     }
 ]

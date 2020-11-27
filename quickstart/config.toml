@@ -1,12 +1,12 @@
-baseURL = "http://example.org/"
+baseURL = "https://antonioalmeida.github.io"
 languageCode = "en-us"
 title = "António Almeida"
 theme = "tex"
 
 [params]
     nickname = "antonioalmeida"
-    bio = "BSc + MSc Computer Engineering Studeng at FEUP, Portugal."
-    bio_2 = "Semi professional handball player"
+    bio = ""
+    bio_2 = ""
 
 [markup]
   [markup.highlight]
