@@ -1,21 +1,28 @@
-[
+[    
+    {
+        "role":"Software Engineer",
+        "company":"Klarna",
+        "company_url": "https://klarna.com",
+        "summary":"Moved to Berlin as part of the Klarna's 2020 Graduate Program. Working on the _new_ consumer banking offering mostly as a Backend Engineer, focused on automating regulatory work.",
+        "range":"October 2020 - Present"
+    },
     {
         "role":"Junior Business Analyst",
         "company":"LTPLabs",
         "company_url": "https://ltplabs.com",
-        "summary":"Part of the development team of a product for a large Portuguese retailer. Focused on developing an ML methodology for sales forecasting and to predict the impact of price markdowns.",
-        "range":"February 2020 - Present"
+        "summary":"Part of the development team of an internal product for Portugal's largest retailer, [Sonae MC](https://sonaemc.com/). Focused on developing an ML methodology for sales forecasting, and to predict the impact of price markdowns on medium-long term sales.",
+        "range":"February 2020 - July 2020"
     },
     {
         "role":"Software Engineer / Research Assistant",
         "company":"INESC-TEC",
-        "summary":"Part of the development team of [MELOA](https://www.ec-meloa.eu) as a member of the Computer Graphics and Information Systems department. Designed and developed a real time data streamer to authenticate, deliver, and load balance requests sent from IoT devices. Also designed a development kit for web apps that use MELOA's data and additional logic, using GraphQL with multiple data sources.",
-        "range":"March 2014 - February 2016"
+        "summary":"Part of the development team of [MELOA](https://www.ec-meloa.eu) as a member of the Computer Graphics and Information Systems (CGIS) department. Designed and developed a real time data streamer to authenticate, deliver, and load balance requests sent from IoT devices. Also designed a development kit for web apps that use MELOA's data and additional logic by providing a GraphQL API with multiple data sources.",
+        "range":"January 2019 - August 2019"
     },
     {
         "role":"Teaching Assistant",
         "company":"FEUP",
-        "summary":"Assisted professors during undergraduates classes, part of FEUP's BSc. + MSc. in Informatics and Computer Engineering program. For the Computer Laboratory course, dealt mostly with implementing low-level device drivers on a VM running Minix OS. Worked on both 2017 and 2018 versions of the program. I also assisted Computer Graphics classes, a course consisting mostly of building guided projects with WebGL to learn the basics of computer graphics algorithms and structures.",
+        "summary":"Assisted professors during undergraduate classes part of FEUP's BSc. + MSc. in Computer Engineering program. Covered two courses: Computer Laboratory course (2017 and 2018) - dealt mostly with implementing low-level device drivers on a VM running Minix OS;  Computer Graphics - a course consisting mostly of building guided projects with WebGL to learn the basics of computer graphics algorithms and structures.",
         "range":"September 2017 - December 2018"
     },
     {
