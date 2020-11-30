@@ -12,8 +12,21 @@ jobs:
     - uses: actions/checkout@v2
       with:
         persist-credentials: false
-        submodules: true  
+        submodules: false  
         fetch-depth: 0    
+
+    - name: clone submodule
+      uses: actions/checkout@v2
+      with:
+        repository: antonioalmeida/tex-hugo-theme
+        path: path
+        ssh-key: ${{ secrets.SSH_KEY }}
+        persist-credentials: true
+
+    - name: checkout submodule
+      run: |
+        git submodule init
+        git submodule update
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
