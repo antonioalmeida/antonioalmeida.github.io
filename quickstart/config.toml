@@ -24,7 +24,7 @@ copyright = "&copy; António Almeida</a> 2020"
 
 [[params.social]]
   name = "CV"
-  url = "/CV-Antonio-Almeida-Nov2020.pdf"
+  url = "/cv.pdf"
 
 [markup]
   [markup.highlight]
