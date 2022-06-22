@@ -2,7 +2,7 @@ baseURL = "https://antonioalmeida.github.io"
 languageCode = "en-us"
 title = "António Almeida"
 theme = "tex"
-copyright = "&copy; António Almeida</a> 2020"
+copyright = "&copy; António Almeida</a> 2022"
 
 [params]
     nickname = "antonioalmeida"
@@ -10,7 +10,6 @@ copyright = "&copy; António Almeida</a> 2020"
     bio = ["Software Engineer", "Handball Player", "Enumerator of things"]
 
 [[params.social]]
-
   name = "Github"
   url = "https://github.com/antonioalmeida"
 
@@ -37,6 +36,3 @@ copyright = "&copy; António Almeida</a> 2020"
     noClasses = true
     style = "github"
     tabWidth = 4
-
-
-
