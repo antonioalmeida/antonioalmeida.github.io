@@ -1,10 +1,17 @@
 [    
     {
+        "role":"Senior Software Engineer",
+        "company":"Klarna",
+        "company_url": "https://klarna.com",
+        "summary":"I said \"it depends\" enough times to become Senior Engineer.",
+        "range":"May 2023 - Present"
+    },
+    {
         "role":"Software Engineer",
         "company":"Klarna",
         "company_url": "https://klarna.com",
         "summary":"Focusing on building great building blocks for banking products.",
-        "range":"October 2020 - Present"
+        "range":"October 2020 - May 2023"
     },
     {
         "role":"Data Scientist",
@@ -22,7 +29,7 @@
     {
         "role":"Teaching Assistant",
         "company":"University of Porto",
-        "summary":"Invited to assist in teaching classes on Low-Level Device Drivers, and Computer Graphics. As a Teaching Assistant, I aided a full-time professor during classes, graded assignments and guided students in the development of their practical projects.",
+        "summary":"Invited to assist in teaching classes on Low-Level Device Drivers, and Computer Graphics. As a Teaching Assistant, led practical classes, graded assignments, and guided students in the development of their practical projects.",
         "range":"September 2017 - December 2018"
     }
 ]
