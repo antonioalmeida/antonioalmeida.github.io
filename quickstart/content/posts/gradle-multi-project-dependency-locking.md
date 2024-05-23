@@ -16,7 +16,7 @@ In Gradle projects locking is achieved by generating and maintaining a `gradle.l
 
 When using Gradle Multi-Project, it's more complicated. From Gradle's [dependency locking documentation](https://docs.gradle.org/8.4/userguide/dependency_locking.html#lock_all_configurations_in_one_build_execution):
 
-> Note that in a multi project setup, dependencies only is executed on one project, the root one in this case.
+> "Note that in a multi project setup, `dependencies` only is executed on one project, the root one in this case."
 
 I can't find any official dependency locking solution for Multi-Project setups, so created a script to address it.
 
@@ -51,7 +51,7 @@ Now, whenever you update or add a dependency, `dependencies-write-locks.sh` must
 ### Remarks
 
 - Protip: run `./gradlew projects` to list your subprojects 
-- Is there a Gradle plugin that does this? May create one if there isn't
+- Is there a Gradle plugin that does this? I'll maybe create one if there isn't
 - Thanks to [Kyle Kelly](https://www.cramhacks.com/p/gradle-multi-project-lockfiles) for inspiration
 
 ### Appendix
