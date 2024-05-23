@@ -2,7 +2,7 @@ baseURL = "https://antonioalmeida.github.io"
 languageCode = "en-us"
 title = "António Almeida"
 theme = "tex"
-copyright = "&copy; António Almeida</a> 2022"
+copyright = "&copy; António Almeida</a> 2024"
 
 [params]
     nickname = "antonioalmeida"
