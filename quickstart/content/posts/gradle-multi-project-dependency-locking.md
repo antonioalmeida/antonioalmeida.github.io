@@ -1,6 +1,6 @@
 ---
 author: "António Almeida"
-date: 2024-05-24
+date: 2024-05-23
 linktitle: "gradle-multi-project-dependency-locking.md"
 menu:
   main:
