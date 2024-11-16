@@ -10,102 +10,70 @@ weight: 10
 
 ---
 
-Here's the scenario: you're a software engineer in a large team (7-12 people). The team has different levels of formal education, seniority, and naturally, different opinions based on previous experiences (and fair share of bad habits). 
+Imagine this: you're a software engineer in a large team, with members ranging from 7 to 12 people. The team has diverse backgrounds, levels of experience, and, naturally, different opinions shaped by past experiences (and a fair share of bad habits).
 
-The amount of work being done in parallel can be overwhelming for any one person to keep track of. You may find yourself reviewing someone's work (e.g., a PR) and thinking:
+The work being done in parallel can be overwhelming to track. As you review someone's work, like a pull request, you may think:
 
-> "This flow should be unit tested instead of integration tested"
+- "This should be unit tested, not integration tested."
+- "We shouldn't duplicate the behavior of X in Y."
+- "This PR lacks context; we need a more detailed description of the solution and its trade-offs."
+- `<Insert your engineering dogma here...>`
 
-> "We should not duplicate the behaviour of X in Y"
+"Didn't we talk about this?" you wonder. Well, maybe not with everyone present, or it was too long ago for newer team members to know.
 
-> "There's not enough context in this PR, we need a more complete description of the solution and its tradeoffs (...)"
-
-> *Insert "obvious" engineering dogma (...)*
-
-"I thought we talked about this?" you think to yourself. Well, you probably didn't, or you did when not everyone was in the room, or you did but it was too long ago and since then people joined the team. 
-
-Either way, it doesn't matter now.
-
-How do you solve this? Finding alignment on quality standards, engineering practices, and architectural decisions is hard when everyone is spread thin and the communication overhead of a 10 person team is no joke.
-
-You have a few options here:
+How do you solve this? Achieving alignment on quality standards, engineering practices, and architectural decisions is tough when everyone is stretched thin, and the communication overhead in a 10-person team is no joke.
 
 ## "I'll fix it myself"
 
-Don't do this. 
+Don't do this. There are two key reasons for producing "low-quality work"[^1]:
 
-There are 2 main reasons for producing "low quality work" [1]:
+1. **Lack of skill**: people don't know what they're doing (yet).
+2. **Lack of ownership**: people do know what to do but don't care enough to do it properly.
 
-1. Lack of skill: the person doesn't know what they're doing (yet)
-1. Lack of ownership: the person does know what they're doing, but doesn't care enough to do it properly.
+Either way, taking over doesn't help in the long run. If you step in:
 
-In either way, taking over won't help you in the long term. If you take over:
+1. They won't learn, and the same issue will arise next time.
+   - Instead, consider pairing with them.
+2. People feel more ownership if they influence the decisions affecting their work. By taking over, nothing changes.
+   - Even allowing less optimal decisions can build accountability next time. Consider a "hands-off" approach.
 
-1. They won't learn anything. The same thing will happen next time. 
-    - Instead, offer to pair with them.
-1. The more people are able to influence decisions that affect them, the greater their sense of ownership will be. If you take over, nothing changes. 
-    - Perhaps taking a less optimal decision will help with accountability next time. Consider a "hands-off" approach.
+## "Just review it"
 
-[1] Whatever that means in your context.
+Treat this as a one-time issue. List all of your concerns explicitly, from nitpics to bugs to recommendations. Heck, even use [conventional comments](https://conventionalcomments.org/) while you're are it.
 
-## "Correction bombardment"
+Here’s what might happen:
 
-Treat this work as a one time problem. 
+1. **Your feedback is taken at face value**: You got what you wanted. The work is now following your ideas and standards. But what about next time? There's a chance this wasn't the learning experience you envisioned because the underlying principles weren't discussed. It's a short term win but gamble in the future.
 
-List all of your concerns explicitly, regardless of nature or severity. You'll most likely end up with a bombardment of comments ranging from variable naming (nitpic), to finding bugs in the idempotency implementation (crucial) or different way of writing a business logic function (important? i don't know, it's buried in with the rest).
+2. **Key feedback is constructively challenged**: This is good. However, this is likely an indication that you're dealing with a healthy team and this is a non-issue.
 
-A few things can happen here.
+3. **Feedback is ignored**: Time for reflection. Are you missing context? Is there a deadline you're not aware of? Is the "standard" a team agreement or just in your head? Are you [bikeshedding](https://www.urbandictionary.com/define.php?term=bikeshedding) or *[austronauting](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)*?
 
-1. Your feedback is taken at face value and the work is updated. 
+## "Focus on What Matters Most"
 
-You got what you wanted. The work is now following your ideas and standards. But what about next time? There's a chance this wasn't the learning experience you envisioned because the underlying principles weren't discussed. It's a gamble.
+Use the scenario to build alignment for future issues. Prioritize one or two critical issues at most. Logs don't follow the standard? Who cares... (right now)? Is there a misalignment on what "idempotency" means? Time to solve this for good.
 
-2. Your opinions are constructively challenged, and a productive discussion unfolds.
-
-This is good. However, this is likely an indication that you're dealing with more senior folks who can generalise the problems at hand and think ahead.
-
-3. You feedback is ignored.
-
-Time to reflect. Are you missing some context? Are people under a deadline you're not aware of? Is this "standard" aligned on with the team or is it just in your head? Are you [bikeshedding](https://www.urbandictionary.com/define.php?term=bikeshedding) or *[austronauting](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)* the situation?
-
-## Focus on what matters most
-
-Use the current scenario as an example to build alignment for future problems.
-
-Focus on 1 - 2 things at most. Logs don't follow the standard? Who cares... (right now)? Is there a misalignment on what "idempotency" means? Time to solve this for good.
-
-Put some effort into conveying *why* it's important. Explore alternatives you have considered, detail their tradeoff and how to mitigate them if possible. Reference authoritative sources (does your company have a guideline on this?), but be critical of them. Finish with your *recommendation*.
+Explain *why* it's important. Explore alternatives and detail trade-offs, referencing authoritative sources (company guidelines, perhaps) but be critical of them. Finish with your recommendation.
 
 Here are some things that I've seen help ease this process:
-#### Find a common language. 
 
-What "scalable" means to you is likely different from what it for the 20+ YOE engineer who writes compilers for fun, and the junior engineer who just graduated. 
-
-#### Align on the fundamentals
-
-You can't discuss multi region deployments in a room where people don't agree on the difference between a unit test and an integration test.
-#### Bring everyone to the discussion table
-
-Remember the accountability thing?
-#### Define your assumptions
-
-Building software is hard. You design with failure in mind. But you need to stop somewhere. Find **reasonable** assumptions depending on your requirements which help you avoid the "but what if X fails?" loop.
-
-For example: 
-- The Kafka host won't fail at the same time as your DB
-- S3 won't be unreachable for longer than 1 minute
-
-#### Don't be afraid to repeat yourself
- 
-If it feels like you're not being understood, you're probably right. Find a simpler way to say the same thing. Then simpler. I've seen saying the same thing out loud helps with highlighting reasoning problems.
-#### Ask others to repeat themselves
-
-If you're not understanding something, changes are others aren't either. 
+- **Find a Common Language**: terms like  "scalable" mean different things for the 20 year veteran who writes compilers for fun versus the junior engineer who just graduated. And it's not a given who's right... 
+- **Align on Fundamentals**: You can't discuss multi region deployments in a room where people don't agree on the difference between a unit test and an integration test.
+- **Include Everyone in Discussions**: Remember the accountability thing?
+- **Define Your Assumptions**: Building software is hard. You design with failure in mind. But you need to stop somewhere. Find **reasonable** assumptions depending on your requirements which help you avoid the "but what if X fails?" loop. [^2]
+- **Repeat Yourself**: If you feel misunderstood, you're probably right. Simplify your message. Speaking aloud often highlights reasoning issues.
+- **Encourage Repetition**: If you're not getting something, changes are others aren't either.
 
 ## It gets better with time
 
 You won't solve everything in a day (or a month). Maybe in a year or two. But it will get better if you focus on the most important problems, and work at it as a team.
 
-It's joyous to work in a high trust, cohesive software team that delivers quality software. You'll know it when you're getting close.
+It's joyous to work in a high trust, cohesive software team that delivers quality software. 
 
-Once things do improve, I've seen some ways that help make sure the gains aren't lost. Perhaps in another blog post.
+You'll know it when you get there.
+
+[^1]: Whatever that means in your context.
+
+[^2]: For example: 
+    - The Kafka host won't fail at the same time as your DB
+    - S3 won't be unreachable for longer than 1 minute
