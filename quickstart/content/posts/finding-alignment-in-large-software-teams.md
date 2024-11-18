@@ -10,31 +10,37 @@ weight: 10
 
 ---
 
-Imagine this: you're a software engineer in a large team, with members ranging from 7 to 12 people. The team has diverse backgrounds, levels of experience, and, naturally, different opinions shaped by past experiences (and a fair share of bad habits).
+Imagine this: you're a software engineer in a large team (7 to 12 people). The team has diverse backgrounds, levels of experience, and, naturally, different opinions shaped by past experiences.
 
-The work being done in parallel can be overwhelming to track. As you review someone's work, like a pull request, you may think:
+The work being done in parallel can be overwhelming for any one person to keep track of. As you review someone's work, like a pull request, you may think:
 
 - "This should be unit tested, not integration tested."
 - "We shouldn't duplicate the behavior of X in Y."
 - "This PR lacks context; we need a more detailed description of the solution and its trade-offs."
 - `<Insert your engineering dogma here...>`
 
-"Didn't we talk about this?" you wonder. Well, maybe not with everyone present, or it was too long ago for newer team members to know.
+"Didn't we talk about this?" you wonder. Maybe you did but not with everyone present. Or it was too long ago for newer team members to know. Maybe you *meant* to write an RFC about it but never got to.
 
-How do you solve this? Achieving alignment on quality standards, engineering practices, and architectural decisions is tough when everyone is stretched thin, and the communication overhead in a 10-person team is no joke.
+In a perfect world, any technical problem is refined, decided upon, and the outcome is instantly embedded into the team's ways of working, and enforced automatically via tooling.
+
+Real life is more complex. Achieving alignment on quality standards, engineering practices, and architectural decisions is tough when everyone is stretched thin, and the communication overhead in a 10-person team is no joke.
+
+How do you address this in a way that solves short term problem (i.e., *this* open PR), while benefiting the team long-term in a way that's healthy for everyone? 
+
+In my limited but immersive experience in large teams I've identified some typical patterns of how people[^1] approach this:
 
 ## "I'll fix it myself"
 
-Don't do this. There are two key reasons for producing "low-quality work"[^1]:
+Don't do this. There are two key reasons for producing "low-quality work"[^2]:
 
 1. **Lack of skill**: people don't know what they're doing (yet).
-2. **Lack of ownership**: people do know what to do but don't care enough to do it properly.
+1. **Lack of ownership**: people do know what to do but don't care enough to do it properly.
 
 Either way, taking over doesn't help in the long run. If you step in:
 
 1. They won't learn, and the same issue will arise next time.
    - Instead, consider pairing with them.
-2. People feel more ownership if they influence the decisions affecting their work. By taking over, nothing changes.
+1. People feel more ownership if they influence the decisions affecting their work. By taking over, nothing changes.
    - Even allowing less optimal decisions can build accountability next time. Consider a "hands-off" approach.
 
 ## "Just review it"
@@ -44,10 +50,8 @@ Treat this as a one-time issue. List all of your concerns explicitly, from nitpi
 Here’s what might happen:
 
 1. **Your feedback is taken at face value**: You got what you wanted. The work is now following your ideas and standards. But what about next time? There's a chance this wasn't the learning experience you envisioned because the underlying principles weren't discussed. It's a short term win but gamble in the future.
-
-2. **Key feedback is constructively challenged**: This is good. However, this is likely an indication that you're dealing with a healthy team and this is a non-issue.
-
-3. **Feedback is ignored**: Time for reflection. Are you missing context? Is there a deadline you're not aware of? Is the "standard" a team agreement or just in your head? Are you [bikeshedding](https://www.urbandictionary.com/define.php?term=bikeshedding) or *[austronauting](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)*?
+1. **Key feedback is constructively challenged**: This is good. However, this is likely an indication that you're dealing with a healthy team and this is a non-issue. Even in this scenario, there's a chance that not everyone followed along (and you can't blame them, there's *so much* to do).
+1. **Feedback is ignored**: Time for reflection. Are you missing context? Is there a deadline you're not aware of? Is the "standard" a team agreement or just in your head? Are you [bikeshedding](https://www.urbandictionary.com/define.php?term=bikeshedding) or *[austronauting](https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/)*?
 
 ## "Focus on What Matters Most"
 
@@ -58,11 +62,11 @@ Explain *why* it's important. Explore alternatives and detail trade-offs, refere
 Here are some things that I've seen help ease this process:
 
 - **Find a Common Language**: terms like  "scalable" mean different things for the 20 year veteran who writes compilers for fun versus the junior engineer who just graduated. And it's not a given who's right... 
-- **Align on Fundamentals**: You can't discuss multi region deployments in a room where people don't agree on the difference between a unit test and an integration test.
-- **Include Everyone in Discussions**: Remember the accountability thing?
-- **Define Your Assumptions**: Building software is hard. You design with failure in mind. But you need to stop somewhere. Find **reasonable** assumptions depending on your requirements which help you avoid the "but what if X fails?" loop. [^2]
-- **Repeat Yourself**: If you feel misunderstood, you're probably right. Simplify your message. Speaking aloud often highlights reasoning issues.
-- **Encourage Repetition**: If you're not getting something, changes are others aren't either.
+- **Align on Fundamentals**: you can't discuss multi region deployments in a room where people don't agree on the difference between a unit test and an integration test.
+- **Include Everyone in Discussions**: remember the accountability thing?
+- **Define Your Assumptions**: building software is hard. You design with failure in mind. But you need to stop somewhere. Find **reasonable** assumptions depending on your requirements which help you avoid the "but what if X fails?" loop. [^3]
+- **Repeat Yourself**: if you feel misunderstood, you're probably right. Simplify your message. Speaking aloud often highlights reasoning issues.
+- **"No stupid questions"**: if you're not following along, changes are others aren't either.
 
 ## It gets better with time
 
@@ -72,8 +76,10 @@ It's joyous to work in a high trust, cohesive software team that delivers qualit
 
 You'll know it when you get there.
 
-[^1]: Whatever that means in your context.
+[^1]: Mostly Individual Contributors. It's been my experience that Engineering Managers default to an organizational approach, as per their expertise and job definition.
 
-[^2]: For example: 
+[^2]: Whatever that means in your context.
+
+[^3]: For example: 
     - The Kafka host won't fail at the same time as your DB
     - S3 won't be unreachable for longer than 1 minute
