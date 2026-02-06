@@ -17,13 +17,13 @@
         "role":"Data Scientist",
         "company":"LTPLabs",
         "company_url": "https://ltplabs.com",
-        "summary":"Part of team developing a predictive analytics system for Portugal's biggest food retailer. Applied state-of-the art ML models for price sales forecasting and developed a novel methodology for price elasticity prediction. Wrote my [MSc thesis](https://repositorio-aberto.up.pt/handle/10216/128978) based on my contribution.",
+        "summary":"Part of team developing a predictive analytics system for Portugal's biggest food retailer. Applied state-of-the art ML models for sales forecasting and developed a novel methodology for price elasticity prediction. Wrote my [MSc thesis](https://repositorio-aberto.up.pt/handle/10216/128978) based on my contribution.",
         "range":"February 2020 - July 2020"
     },
     {
         "role":"Software Engineer",
         "company":"INESC-TEC",
-        "summary":"Received a research grant through which I joined Project [MELOA](https://www.ec-meloa.eu/)’s team, where I designed and developed a data stream processing application to authenticate, deliver, and load balance requests sent from IoT devices.",
+        "summary":"Joined Project [MELOA](https://www.ec-meloa.eu/)’s team, where I designed and developed a backend service to authenticate, deliver, and load balance requests sent from IoT devices.",
         "range":"January 2019 - August 2019"
     },
     {
